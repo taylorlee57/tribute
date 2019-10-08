@@ -1,0 +1,137 @@
+body{
+  background-color: black;
+}
+.bg-img {
+  /* The image used */
+  background-image:url(https://i.pinimg.com/originals/92/68/bc/9268bccd4728a9319ff707cc4e7659d3.jpg);
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+/* The navbar */
+.topnav {
+  overflow: hidden;
+}
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Creepster', cursive;
+  letter-spacing: 2px;
+}
+/* hover color */
+.topnav a:hover {
+  color: #f5c542;
+  transition-delay: 1s;
+  transition: .8s ease-out;
+}
+.hero{
+   display: block;
+   margin-left: 75%;
+   margin-top: 35%;
+   width: 60%;
+}
+header{
+  padding: 2em;
+}
+.splash{
+  display: flex;
+  justify-content: space-between;
+}
+/*.splash-txt{
+  align-self: center;
+  font-size: 200%;
+  color:white;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+}*/
+.splash-img{
+  height: auto;
+  width: 100%;
+}
+
+article div{
+  color: #EEE;
+  padding: 1em;
+}
+article{
+  display: grid;
+  grid-gap: .25em;
+  grid-template-areas:
+  "feat1 feat2 feat3"
+  "wall blog1 blog1"
+  "wall blog2 blog2"
+  "wall blog3 blog3";
+}
+.feat1{grid-area:feat1;}
+.feat2{grid-area:feat2;}
+.feat3{grid-area:feat3;}
+.wall{grid-area:wall;}
+.blog1{grid-area:blog1;}
+.blog2{grid-area:blog2;}
+.blog3{grid-area:blog3;}
+
+.feat1{
+  height: 100%;
+  width: inherit;
+}
+.blog1{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  color: #b6c0f2;
+  line-height: 1.5em;
+}
+.blog2{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  color: #b6c0f2;
+  line-height: 1.5em;
+}
+.blog3{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  color: #b6c0f2;
+}
+
+.footform{
+  display:block;
+}
+
+footer{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+@media screen and (max-width: 767px){
+  article{
+    grid-template-areas:
+    "feat1"
+    "feat2"
+    "feat3"
+    "blog1"
+    "blog2"
+    "blog3"
+    "wall";
+  }
+  .wall{
+    display: none;
+  }
+}
